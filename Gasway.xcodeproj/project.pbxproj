@@ -8,20 +8,45 @@
 
 /* Begin PBXBuildFile section */
 		E7D159EA20AD1BF30012123B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D159E920AD1BF30012123B /* AppDelegate.swift */; };
-		E7D159EC20AD1BF30012123B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D159EB20AD1BF30012123B /* ViewController.swift */; };
 		E7D159EF20AD1BF30012123B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D159ED20AD1BF30012123B /* Main.storyboard */; };
 		E7D159F120AD1BF70012123B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7D159F020AD1BF70012123B /* Assets.xcassets */; };
 		E7D159F420AD1BF70012123B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7D159F220AD1BF70012123B /* LaunchScreen.storyboard */; };
+		E7D159FD20AD23F80012123B /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D159FB20AD23F80012123B /* ArtworkViews.swift */; };
+		E7D159FE20AD23F80012123B /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D159FC20AD23F80012123B /* Artwork.swift */; };
+		E7D15A0220AD240A0012123B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D159FF20AD24050012123B /* CustomTextField.swift */; };
+		E7D15A0320AD240A0012123B /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D15A0020AD24060012123B /* Common.swift */; };
+		E7D15A0420AD240A0012123B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D15A0120AD24060012123B /* DetailViewController.swift */; };
+		E7D15A0A20AD24110012123B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D15A0520AD240F0012123B /* MainViewController.swift */; };
+		E7D15A0B20AD24110012123B /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D15A0620AD240F0012123B /* Station.swift */; };
+		E7D15A0C20AD24110012123B /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D15A0720AD24100012123B /* Price.swift */; };
+		E7D15A0D20AD24110012123B /* StationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D15A0820AD24100012123B /* StationTableViewCell.swift */; };
+		E7D15A0E20AD24110012123B /* KeyboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D15A0920AD24100012123B /* KeyboardHelper.swift */; };
+		E7D15A1620AD2D100012123B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7D15A1520AD2CB30012123B /* GoogleService-Info.plist */; };
+		ED435E1282D916901FE7CDAD /* Pods_Gasway.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F473A86E586825502048085 /* Pods_Gasway.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F473A86E586825502048085 /* Pods_Gasway.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gasway.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AB18289AF4E860D5B8D4950 /* Pods-Gasway.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasway.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gasway/Pods-Gasway.release.xcconfig"; sourceTree = "<group>"; };
+		51B0B7D55161857BAB2D343B /* Pods-Gasway.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gasway.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gasway/Pods-Gasway.debug.xcconfig"; sourceTree = "<group>"; };
 		E7D159E620AD1BF30012123B /* Gasway.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gasway.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D159E920AD1BF30012123B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7D159EB20AD1BF30012123B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7D159EE20AD1BF30012123B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7D159F020AD1BF70012123B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7D159F320AD1BF70012123B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7D159F520AD1BF70012123B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D159FB20AD23F80012123B /* ArtworkViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
+		E7D159FC20AD23F80012123B /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		E7D159FF20AD24050012123B /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		E7D15A0020AD24060012123B /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		E7D15A0120AD24060012123B /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E7D15A0520AD240F0012123B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E7D15A0620AD240F0012123B /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		E7D15A0720AD24100012123B /* Price.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		E7D15A0820AD24100012123B /* StationTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTableViewCell.swift; sourceTree = "<group>"; };
+		E7D15A0920AD24100012123B /* KeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
+		E7D15A0F20AD25AD0012123B /* Gasway-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gasway-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7D15A1520AD2CB30012123B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/Alan/Documents/iOS/Gasway/Gasway/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +54,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED435E1282D916901FE7CDAD /* Pods_Gasway.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		36BEB27796FA0B332396412E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51B0B7D55161857BAB2D343B /* Pods-Gasway.debug.xcconfig */,
+				4AB18289AF4E860D5B8D4950 /* Pods-Gasway.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A5D33B3C1607C66DC0CB374 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F473A86E586825502048085 /* Pods_Gasway.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7D159DD20AD1BF30012123B = {
 			isa = PBXGroup;
 			children = (
 				E7D159E820AD1BF30012123B /* Gasway */,
 				E7D159E720AD1BF30012123B /* Products */,
+				36BEB27796FA0B332396412E /* Pods */,
+				6A5D33B3C1607C66DC0CB374 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +99,23 @@
 		E7D159E820AD1BF30012123B /* Gasway */ = {
 			isa = PBXGroup;
 			children = (
+				E7D15A0920AD24100012123B /* KeyboardHelper.swift */,
+				E7D15A0520AD240F0012123B /* MainViewController.swift */,
+				E7D15A0F20AD25AD0012123B /* Gasway-Bridging-Header.h */,
+				E7D15A0720AD24100012123B /* Price.swift */,
+				E7D15A0620AD240F0012123B /* Station.swift */,
+				E7D15A0820AD24100012123B /* StationTableViewCell.swift */,
+				E7D15A0020AD24060012123B /* Common.swift */,
+				E7D159FF20AD24050012123B /* CustomTextField.swift */,
+				E7D15A0120AD24060012123B /* DetailViewController.swift */,
+				E7D159FC20AD23F80012123B /* Artwork.swift */,
+				E7D159FB20AD23F80012123B /* ArtworkViews.swift */,
 				E7D159E920AD1BF30012123B /* AppDelegate.swift */,
-				E7D159EB20AD1BF30012123B /* ViewController.swift */,
 				E7D159ED20AD1BF30012123B /* Main.storyboard */,
 				E7D159F020AD1BF70012123B /* Assets.xcassets */,
 				E7D159F220AD1BF70012123B /* LaunchScreen.storyboard */,
 				E7D159F520AD1BF70012123B /* Info.plist */,
+				E7D15A1520AD2CB30012123B /* GoogleService-Info.plist */,
 			);
 			path = Gasway;
 			sourceTree = "<group>";
@@ -71,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7D159F820AD1BF70012123B /* Build configuration list for PBXNativeTarget "Gasway" */;
 			buildPhases = (
+				4EDE56A94E5D113729B0A7B3 /* [CP] Check Pods Manifest.lock */,
 				E7D159E220AD1BF30012123B /* Sources */,
 				E7D159E320AD1BF30012123B /* Frameworks */,
 				E7D159E420AD1BF30012123B /* Resources */,
+				87B703917306548839D8A2CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7D159F420AD1BF70012123B /* LaunchScreen.storyboard in Resources */,
+				E7D15A1620AD2D100012123B /* GoogleService-Info.plist in Resources */,
 				E7D159F120AD1BF70012123B /* Assets.xcassets in Resources */,
 				E7D159EF20AD1BF30012123B /* Main.storyboard in Resources */,
 			);
@@ -130,13 +189,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EDE56A94E5D113729B0A7B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Gasway-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B703917306548839D8A2CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Gasway/Pods-Gasway-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AEXML/AEXML.framework",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/Font-Awesome-Swift/Font_Awesome_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AEXML.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Font_Awesome_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gasway/Pods-Gasway-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7D159E220AD1BF30012123B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D159EC20AD1BF30012123B /* ViewController.swift in Sources */,
+				E7D15A0E20AD24110012123B /* KeyboardHelper.swift in Sources */,
+				E7D15A0B20AD24110012123B /* Station.swift in Sources */,
+				E7D159FD20AD23F80012123B /* ArtworkViews.swift in Sources */,
+				E7D15A0D20AD24110012123B /* StationTableViewCell.swift in Sources */,
+				E7D15A0C20AD24110012123B /* Price.swift in Sources */,
+				E7D159FE20AD23F80012123B /* Artwork.swift in Sources */,
 				E7D159EA20AD1BF30012123B /* AppDelegate.swift in Sources */,
+				E7D15A0320AD240A0012123B /* Common.swift in Sources */,
+				E7D15A0220AD240A0012123B /* CustomTextField.swift in Sources */,
+				E7D15A0420AD240A0012123B /* DetailViewController.swift in Sources */,
+				E7D15A0A20AD24110012123B /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +409,7 @@
 		};
 		E7D159F920AD1BF70012123B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51B0B7D55161857BAB2D343B /* Pods-Gasway.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,8 +419,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alansnchz.Gasway;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alansnchz.gasway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Gasway/Gasway-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,6 +429,7 @@
 		};
 		E7D159FA20AD1BF70012123B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AB18289AF4E860D5B8D4950 /* Pods-Gasway.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -305,8 +439,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alansnchz.Gasway;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alansnchz.gasway;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Gasway/Gasway-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
