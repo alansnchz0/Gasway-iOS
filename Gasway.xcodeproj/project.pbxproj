@@ -47,6 +47,9 @@
 		E7D15A0920AD24100012123B /* KeyboardHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHelper.swift; sourceTree = "<group>"; };
 		E7D15A0F20AD25AD0012123B /* Gasway-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Gasway-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7D15A1520AD2CB30012123B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "/Users/Alan/Documents/iOS/Gasway/Gasway/GoogleService-Info.plist"; sourceTree = "<absolute>"; };
+		E7D15A1720AFC0480012123B /* Location.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Location.gpx; sourceTree = "<group>"; };
+		E7D15A1820AFE57C0012123B /* Gasway.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gasway.entitlements; sourceTree = "<group>"; };
+		E7D15A1920B07A760012123B /* Directions.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = Directions.geojson; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		E7D159DD20AD1BF30012123B = {
 			isa = PBXGroup;
 			children = (
+				E7D15A1920B07A760012123B /* Directions.geojson */,
+				E7D15A1720AFC0480012123B /* Location.gpx */,
 				E7D159E820AD1BF30012123B /* Gasway */,
 				E7D159E720AD1BF30012123B /* Products */,
 				36BEB27796FA0B332396412E /* Pods */,
@@ -99,6 +104,7 @@
 		E7D159E820AD1BF30012123B /* Gasway */ = {
 			isa = PBXGroup;
 			children = (
+				E7D15A1820AFE57C0012123B /* Gasway.entitlements */,
 				E7D15A0920AD24100012123B /* KeyboardHelper.swift */,
 				E7D15A0520AD240F0012123B /* MainViewController.swift */,
 				E7D15A0F20AD25AD0012123B /* Gasway-Bridging-Header.h */,
@@ -154,6 +160,11 @@
 				TargetAttributes = {
 					E7D159E520AD1BF30012123B = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -412,9 +423,11 @@
 			baseConfigurationReference = 51B0B7D55161857BAB2D343B /* Pods-Gasway.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gasway/Gasway.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8446RS8N9W;
 				INFOPLIST_FILE = Gasway/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,7 +436,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Gasway/Gasway-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -432,9 +445,11 @@
 			baseConfigurationReference = 4AB18289AF4E860D5B8D4950 /* Pods-Gasway.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Gasway/Gasway.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8446RS8N9W;
 				INFOPLIST_FILE = Gasway/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -443,7 +458,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Gasway/Gasway-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

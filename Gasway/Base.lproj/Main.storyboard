@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -26,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="234" width="414" height="502"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="90S-GI-UVX">
-                                        <rect key="frame" x="191" y="15" width="35" height="35"/>
+                                        <rect key="frame" x="189.66666666666666" y="15" width="35" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="KYd-5Y-cR5"/>
                                             <constraint firstAttribute="width" constant="35" id="c6Q-E7-WMG"/>
@@ -245,8 +244,9 @@
                                     <action selector="didReaction:" destination="7Zy-2M-SFP" eventType="touchUpInside" id="qmW-58-WJd"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Ovi-pR-aDL">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ovi-pR-aDL">
                                 <rect key="frame" x="62" y="313" width="290" height="2"/>
+                                <color key="trackTintColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JBY-yQ-CvE">
                                 <rect key="frame" x="0.0" y="348" width="414" height="228"/>

@@ -284,14 +284,9 @@ class DetailViewController: UIViewController, UITextViewDelegate {
                         likes += 1.0
                     }
                 }
-                let likesProgress = (likes + dislikes) > 0 ? Float(likes / (likes + dislikes)) : 0.0
-                self.reactionProgress.setProgress(likesProgress, animated: true)
                 
-                if likesProgress > 0.5 {
-                    self.reactionProgress.progressTintColor = UIColor.blue
-                } else {
-                    self.reactionProgress.progressTintColor = UIColor.red
-                }
+                let likesProgress = (likes + dislikes) > 0 ? Float(likes / (likes + dislikes)) : 0.5
+                self.reactionProgress.setProgress(likesProgress , animated: true)
             }
         }
     }
@@ -355,9 +350,14 @@ class DetailViewController: UIViewController, UITextViewDelegate {
         
         // [START field constraints]
         field.widthAnchor.constraint(equalToConstant: 350.0).isActive = true
-        field.leadingAnchor.constraint(equalTo: self.commentsScrollView.leadingAnchor, constant: 16.0).isActive = true
-        field.trailingAnchor.constraint(equalTo: self.commentsScrollView.trailingAnchor, constant: 16.0).isActive = true
-        field.topAnchor.constraint(equalTo: self.commentsScrollView.topAnchor, constant: CGFloat(( position + 1.0 ) * 52.0 )).isActive = true
+        field.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        if position > 0 {
+          field.topAnchor.constraint(equalTo: self.commentsScrollView.topAnchor, constant: CGFloat( position * 64.0 )).isActive = true
+        } else {
+            field.topAnchor.constraint(equalTo: self.commentsScrollView.topAnchor, constant: 8.0).isActive = true
+        }
+        
         // [END field constraints]
         
         return field
@@ -374,7 +374,7 @@ class DetailViewController: UIViewController, UITextViewDelegate {
         
         // [START field constraints]
         label.leadingAnchor.constraint(equalTo: self.commentsScrollView.leadingAnchor, constant: 48.0).isActive = true
-        label.trailingAnchor.constraint(equalTo: self.commentsScrollView.trailingAnchor, constant: 16.0).isActive = true
+        label.trailingAnchor.constraint(equalTo: self.commentsScrollView.trailingAnchor, constant: -8.0).isActive = true
         label.topAnchor.constraint(equalTo: commentAnchor, constant: 32.0).isActive = true
         // [END field constraints]
         
@@ -382,6 +382,7 @@ class DetailViewController: UIViewController, UITextViewDelegate {
             label.bottomAnchor.constraint(equalTo:
                 self.commentsScrollView.bottomAnchor, constant: 2.0).isActive = true
         }
+        // [END field constraints]
         
         return label
     }

@@ -285,7 +285,7 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UITableVi
         
         resetArrays()
         
-        let urlString = "https://gasway.com.mx/80430b0bd02771d3036d126bf1d460c4?lat=\(lat)&lng=\(lng)&dst=\(km)"
+        let urlString = "https://gasway.app/80430b0bd02771d3036d126bf1d460c4?lat=\(lat)&lng=\(lng)&dst=\(km)"
         guard let url = URL(string: urlString) else { return }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
