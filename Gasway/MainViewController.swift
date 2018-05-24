@@ -156,6 +156,18 @@ class MainViewController: UIViewController, CLLocationManagerDelegate, UITableVi
         }
     }
 
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
+            mapView.showsUserLocation = true
+            locationManager.desiredAccuracy = kCLLocationAccuracyKilometer
+            locationManager.pausesLocationUpdatesAutomatically = true
+            locationManager.distanceFilter = 3000.0
+            locationManager.startUpdatingLocation()
+        } else {
+            locationManager.requestWhenInUseAuthorization()
+        }
+    }
+    
     func checkLocationAuthorizationStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             mapView.showsUserLocation = true
